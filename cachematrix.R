@@ -52,10 +52,10 @@ cacheSolve <- function(mValue, ...) {
   ##If the mean wasn't null, then find the mean and invert it
   
   ##Get the data from makeCacheMatrix
-  data <- mValue$get()
+  newData <- mValue$get()
   
   ##Calculate the mean of the data
-  mMean <- mean(data, ...)
+  mMean <- mean(newData, ...)
   
   ##Set the mean
   mValue$setmean(mMean)
